@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import SideBar from "./components/Sidebar"; 
 import Homepage from "./pages/Home";
+import ProfilePage from "./pages/Profile"
 import BottomTextInput from "./components/BottomTextInput";
 import "./App.css"; 
 
@@ -22,6 +23,7 @@ function App() {
           <div className="flex-1 ml-16">
             <Routes>
               <Route path="/" element={<Homepage />} />
+              <Route path="/profile" element={<ProfilePage />} />
             </Routes>
           </div>
         </div>
